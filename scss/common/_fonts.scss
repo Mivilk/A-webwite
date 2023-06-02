@@ -1,0 +1,12 @@
+@mixin font-face ($ff, $src, $fw) {
+  @font-face {
+    font-family: $ff;
+    src: url($src);
+    font-weight: $fw;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include font-face("Averta Demo PE Cutted Demo Regular", "../../fonts/AvertaDemoPECuttedDemo-Regular.woff2", 400);
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Bold.woff2", 700);

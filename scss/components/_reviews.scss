@@ -1,0 +1,158 @@
+.reviews {
+  padding-bottom: 150px;
+
+  &__heading {
+    text-align: center;
+    padding-bottom: 115px;
+  }
+
+  &__subtitle {
+    color: $grey-2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 17px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    position: relative;
+    z-index: 0;
+  }
+
+  &__img-box:first-child {
+    & img {
+      filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      background: url("../../images/reviews/circle.svg") no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -37px;
+      width: 196px;
+      height: 154px;
+      background: url("../../images/reviews/dots.svg") no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  &__img-box:last-child {
+    &::before {
+      content: "";
+      width: 57%;
+      height: 51%;
+      background-color: #FFF5DB;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+      left: 6%;
+      z-index: -1;
+    }
+  }
+}
+
+@include desktop-2 {
+  .reviews {
+    padding-bottom: 100px;
+
+    &__heading {
+      padding-bottom: 80px;
+    }
+
+    &__content {
+      align-items: center;
+      gap: 50px;
+    }
+
+    & .slider {
+      margin: 0;
+    }
+
+    & .swiper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .swiper-slide {
+      text-align: center;
+    }
+
+    &__img-box:first-child {
+      max-width: 400px;
+    }
+
+    &__img-box:last-child {
+      display: none;
+    }
+  }
+}
+
+@include tablet {
+  .reviews {
+    &__heading {
+      padding-bottom: 50px;
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__img-box {
+      & img {
+        border-top-right-radius: 200px;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .reviews {
+    padding-bottom: 80px;
+
+    &__heading {
+      padding-bottom: 40px;
+      max-width: 400px;
+    }
+
+    &__subtitle {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include small-mobile {
+  .reviews {
+    padding-bottom: 50px;
+
+    &__heading {
+      padding-bottom: 30px;
+    }
+  }
+}

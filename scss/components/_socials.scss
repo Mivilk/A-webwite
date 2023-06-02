@@ -1,0 +1,14 @@
+.socials {
+  display: flex;
+  gap: 16px;
+
+  &__item-link img {
+    width: unset;
+  }
+}
+
+@include tablet {
+  .socials {
+    justify-content: center;
+  }
+}

@@ -12,33 +12,42 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="logo">A+ Studio</div>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">Home</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">What We Do</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">Service</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">Project</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">Blog</a>
-          </li>
-          <li class="header-nav__list-item">
-            <a href="#" class="header-nav__list-item-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="logo"><span>A+</span> Studio</div>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">Home</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">What We Do</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">Service</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">Project</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">Blog</a>
+              </li>
+              <li class="header-nav__list-item">
+                <a href="#" class="header-nav__list-item-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="menu-btn" class="menu-btn">
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line"></div>
+            <div class="menu-btn__line"></div>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="intro">
-        <div class="container">
+        <div class="container container_no-padding">
           <div class="row">
             <div class="intro__content">
               <h2 class="title">A Digital Product Agency</h2>
@@ -61,18 +70,26 @@
               <h2 class="title">Our Client</h2>
               <p class="client__content-text">Several selected clients, who already believe in our service.</p>
             </div>
-            <ul class="client__cotnent-logos">
-              <li class="client__content-logos-item">
-                <img src="images/client/google-logo.svg" alt="google">
+            <ul class="client__logos">
+              <li class="client__logos-item">
+                <a href="#" class="client__logos-item-link">
+                  <img src="images/client/google-logo.svg" alt="google">
+                </a>
               </li>
-              <li class="client__content-logos-item">
-                <img src="images/client/airbnb-logo.svg" alt="airbnb">
+              <li class="client__logos-item">
+                <a href="#" class="client__logos-item-link">
+                  <img src="images/client/airbnb-logo.svg" alt="airbnb">
+                </a>
               </li>
-              <li class="client__content-logos-item">
-                <img src="images/client/uber-eats Logo.svg" alt="uber">
+              <li class="client__logos-item">
+                <a href="#" class="client__logos-item-link">
+                  <img src="images/client/uber-eats Logo.svg" alt="uber">
+                </a>
               </li>
-              <li class="client__content-logos-item">
-                <img src="images/client/amazon-logo.svg" alt="amazon">
+              <li class="client__logos-item">
+                <a href="#" class="client__logos-item-link">
+                  <img src="images/client/amazon-logo.svg" alt="amazon">
+                </a>
               </li>
             </ul>
           </div>
@@ -88,32 +105,32 @@
             </div>
             <ul class="business__cards">
               <li class="business__cards-item">
-                <div class="businness__cards-item-img-box">
+                <div class="business__cards-item-img-box">
                   <img src="images/business/box-search.svg" alt="search box">
                 </div>
-                <h3 class="businness__cards-item-title">Business Idea Planning</h3>
-                <p class="businness__cards-item-text">We present you a proposal and discuss niffty-gritty like</p>
+                <h3 class="business__cards-item-title">Business Idea Planning</h3>
+                <p class="business__cards-item-text">We present you a proposal and discuss niffty-gritty like</p>
               </li>
               <li class="business__cards-item">
-                <div class="businness__cards-item-img-box">
+                <div class="business__cards-item-img-box">
                   <img src="images/business/empty-wallet.svg" alt="wallet">
                 </div>
-                <h3 class="businness__cards-item-title">Financial Planning System</h3>
-                <p class="businness__cards-item-text">Protocols apart from aengage models, pricing billing</p>
+                <h3 class="business__cards-item-title">Financial Planning System</h3>
+                <p class="business__cards-item-text">Protocols apart from aengage models, pricing billing</p>
               </li>
               <li class="business__cards-item">
-                <div class="businness__cards-item-img-box">
+                <div class="business__cards-item-img-box">
                   <img src="images/business/code.svg" alt="code">
                 </div>
-                <h3 class="businness__cards-item-title">Development Website and App</h3>
-                <p class="businness__cards-item-text">Communication protocols apart from engagement models</p>
+                <h3 class="business__cards-item-title">Development Website and App</h3>
+                <p class="business__cards-item-text">Communication protocols apart from engagement models</p>
               </li>
               <li class="business__cards-item">
-                <div class="businness__cards-item-img-box">
+                <div class="business__cards-item-img-box">
                   <img src="images/business/chart.svg" alt="rating">
                 </div>
-                <h3 class="businness__cards-item-title">Market Analysis Project</h3>
-                <p class="businness__cards-item-text">Protocols apart from aengage models, pricing billing</p>
+                <h3 class="business__cards-item-title">Market Analysis Project</h3>
+                <p class="business__cards-item-text">Protocols apart from aengage models, pricing billing</p>
               </li>
             </ul>
           </div>
@@ -122,7 +139,9 @@
       <section class="product">
         <div class="container">
           <div class="row">
-            <div class="product__video"></div>
+            <div class="product__video-wrapper">
+              <div class="product__video"></div>
+            </div>
             <div class="product__content">
               <h2 class="title">Great Digital Product Agency since 2016 </h2>
               <p class="product__content-text">Our Business Plan is a written document describing a company's core
@@ -135,86 +154,98 @@
       </section>
       <section class="reviews">
         <div class="container">
-          <div class="row">
-            <div class="reviews-img-box">
-              <img src="images/reviews/main-person.svg" alt="person">
+          <div class="row row_column">
+            <div class="reviews__heading">
+              <h2 class="title">What our happy client say</h2>
+              <p class="reviews__subtitle">Several selected clients, who already believe in our service.</p>
             </div>
-            <div class="reviws-content">
-              <div class="slider">
-                <div class="slider__wrapper">
-                  <div class="slider__wrapper-slide">
-                    <h3 class="slider__wrapper-slide-title">Matthew Paul</h3>
-                    <p class="slider__wrapper-slide-text">Perfect, very good job! Thank you for the amazing design and
-                      work. Really impressed with the high quality and quick turnaround time. Highly recommend.
-                    </p>
-                  </div>
-                  <div class="slider__wrapper-slide">
-                    <h3 class="slider__wrapper-slide-title">Matthew Paul</h3>
-                    <p class="slider__wrapper-slide-text">Perfect, very good job! Thank you for the amazing design and
-                      work. Really impressed with the high quality and quick turnaround time. Highly recommend.
-                    </p>
-                  </div>
-                  <div class="slider__wrapper-slide">
-                    <h3 class="slider__wrapper-slide-title">Matthew Paul</h3>
-                    <p class="slider__wrapper-slide-text">Perfect, very good job! Thank you for the amazing design and
-                      work. Really impressed with the high quality and quick turnaround time. Highly recommend.
-                    </p>
-                  </div>
-                  <div class="slider__wrapper-slide">
-                    <h3 class="slider__wrapper-slide-title">Matthew Paul</h3>
-                    <p class="slider__wrapper-slide-text">Perfect, very good job! Thank you for the amazing design and
-                      work. Really impressed with the high quality and quick turnaround time. Highly recommend.
-                    </p>
-                  </div>
-                  <div class="slider__wrapper-slide">
-                    <h3 class="slider__wrapper-slide-title">Matthew Paul</h3>
-                    <p class="slider__wrapper-slide-text">Perfect, very good job! Thank you for the amazing design and
-                      work. Really impressed with the high quality and quick turnaround time. Highly recommend.
-                    </p>
-                  </div>
-                </div>
-                <div class="slider__pagination"></div>
+            <div class="reviews__content">
+              <div class="reviews__img-box">
+                <img src="images/reviews/main-person.svg" alt="main person">
               </div>
-            </div>
-            <div class="reviews-img-box">
-              <img src="images/reviews/persons-picture.svg" alt="persons">
+              <div class="slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <h3 class="swiper-slide-title">Matthew Paul</h3>
+                      <p class="swiper-slide-text">Perfect, very good job! Thank you for the amazing design and work.
+                        Really impressed with the high quality and quick turnaround time. Highly recommend.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3 class="swiper-slide-title">Matthew Paul</h3>
+                      <p class="swiper-slide-text">Perfect, very good job! Thank you for the amazing design and work.
+                        Really impressed with the high quality and quick turnaround time. Highly recommend.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3 class="swiper-slide-title">Matthew Paul</h3>
+                      <p class="swiper-slide-text">Perfect, very good job! Thank you for the amazing design and work.
+                        Really impressed with the high quality and quick turnaround time. Highly recommend.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3 class="swiper-slide-title">Matthew Paul</h3>
+                      <p class="swiper-slide-text">Perfect, very good job! Thank you for the amazing design and work.
+                        Really impressed with the high quality and quick turnaround time. Highly recommend.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3 class="swiper-slide-title">Matthew Paul</h3>
+                      <p class="swiper-slide-text">Perfect, very good job! Thank you for the amazing design and work.
+                        Really impressed with the high quality and quick turnaround time. Highly recommend.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="reviews__img-box">
+                <img src="images/reviews/persons-picture.svg" alt="people">
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <form class="form" action="#" method="get">
-        <div class="form__wrapper">
-          <div class="form__wrapper-text-content">
-            <h2 class="title">Subscribe Newsletter</h2>
-            <p class="form__wrapper-text-content-text">I will update good news and promotion service not spam</p>
-          </div>
-          <label class="form__wrapper-input" for="input">
-            <input id="input" type="text">
-            <button type="submit" class="form__wrapper-btn btn">Contact Now</button>
-          </label>
+      <section class="subscribe">
+        <div class="container">
+          <form action="" id="form" novalidate class="subscribe__form">
+            <div class="subscribe__form-inner">
+              <div class="subscribe__form-text-content">
+                <h2 class="title">Subscribe Newsletter</h2>
+                <p class="subscribe__form-text-content-text">I will update good news and promotion service not spam</p>
+              </div>
+              <label for="input" class="subscribe__form-input-wrapper">
+                <input class="input" data-input-type="email" id="input" type="email" placeholder="Enter your email address.." autocomplete="off">
+                <button class="btn" type="submit">Contact Now</button>
+              </label>
+            </div>
+          </form>
         </div>
-      </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="row row_column">
           <div class="footer__main">
             <div class="footer__main-content">
-              <div class="logo">A+ Studio</div>
-              <p class="footer__main-content-text"></p>
+              <div class="logo"><span>A+</span> Studio</div>
+              <p class="footer__main-content-text">Leading digital agency with solid design and development expertise.
+                We build readymade websites, mobile applications, and elaborate online business services.
+              </p>
               <ul class="socials">
-                <li class="socials-item">
-                  <a href="#" class="socials-item-link">
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link">
                     <img src="images/socials/facebook.svg" alt="facebook">
                   </a>
                 </li>
-                <li class="socials-item">
-                  <a href="#" class="socials-item-link">
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link">
                     <img src="images/socials/twitter.svg" alt="twitter">
                   </a>
                 </li>
-                <li class="socials-item">
-                  <a href="#" class="socials-item-link">
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link">
                     <img src="images/socials/linkedin.svg" alt="linkedin">
                   </a>
                 </li>
@@ -257,12 +288,40 @@
               </ul>
             </nav>
           </div>
-          <div class="line"></div>
           <p class="footer__copyright">Copyright © 2022 Avi Yansah</p>
         </div>
       </div>
     </footer>
   </div>
+  <div class="menu">
+    <nav class="menu__nav">
+      <ul class="menu__nav-list">
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">Home</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">What We Do</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">Service</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">Project</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">Blog</a>
+        </li>
+        <li class="menu__nav-list-item">
+          <a href="#" class="menu__nav-list-item-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/video-loading.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/form-validation.js"></script>
 </body>
 
 </html>

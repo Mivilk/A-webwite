@@ -1,0 +1,67 @@
+.slider {
+  margin: 85px 40px 0 65px;
+  max-width: 412px;
+
+  & .swiper-slide-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+  }
+
+  & .swiper-slide-text {
+    color: $grey;
+    line-height: 1.6;
+    margin: 20px 0 40px 0;
+  }
+
+  & .swiper-pagination {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    max-width: 184px;
+  }
+
+  & .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #E7F0FC;
+    opacity: 1;
+
+    &-active {
+      background-color: #2639ED;
+    }
+  }
+}
+
+@include tablet {
+  .slider {
+    & .swiper-slide-text {
+      margin: 20px 0;
+    }
+  }
+}
+
+@include small-mobile {
+  .slider {
+    max-width: 320px;
+
+    & .swiper-slide-text {
+      margin: 15px 0;
+    }
+  }
+}
+
+@include small-mobile-2 {
+  .slider {
+    max-width: 280px;
+
+    & .swiper-slide-title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    & .swiper-slide-text {
+      font-size: 14px;
+    }
+  }
+}

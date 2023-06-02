@@ -1,0 +1,76 @@
+html, body {
+  font-family: "Averta Demo PE Cutted Demo Regular", sans-serif;
+  color: $black;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  
+  &_no-padding {
+    padding: 0;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_column {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: capitalize;
+}
+
+.btn {
+  display: inline-block;
+  background-color: $blue;
+  padding: 20px 40px;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  font-weight: 700;
+  border-radius: 60px;
+  transition: .3s;
+
+  &:hover {
+    background-color: $blue-darker;
+  }
+}
+
+@include small-mobile {
+  .title {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
